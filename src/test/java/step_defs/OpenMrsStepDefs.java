@@ -42,6 +42,8 @@ public class OpenMrsStepDefs {
     @Then("I enter all required inofrmation")
     public void i_enter_all_required_inofrmation(io.cucumber.datatable.DataTable dataTable) {
 
+
+        
         Map<String, List> dataMap = dataTable.asMap(String.class, List.class);
         Map<String, String[]> dataMap2 = dataTable.asMap(String.class,String[].class);
         rpp = new RegisterAPatientPage(driver);
